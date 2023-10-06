@@ -75,7 +75,7 @@
 		<p>Ante los problemas planteados, siempre trato de buscar más de una solución, para optar por la optima.</p>
 		<p>Soy recién egresado de la licenciatura en Actuaría de la Facultad de Ciencias de la UNAM (2018-2022), aún estoy en proceso de titulación.</p>
 
-		<p>Recientemente he realizado mi servicio social en la Comisión Nacional de Seguros y fianzas CNSF (Abril-Octubre 2023).</p>
+		<p>Recientemente realicé mi servicio social en la Comisión Nacional de Seguros y Fianzas CNSF (Abril-Octubre 2023).</p>
 
 
 
@@ -106,8 +106,9 @@
   <li>R</li>
   <li>SQL: Intermedio</li>
   <li>Python: Intermedio</li>
+  <li>Modulos usados en python: pandas, sqlite3, plotly, scrapy, request, nltk, sklearn, os, time, docx y pptx.</li>
 </ul>
-<p> Modulos usados en python: pandas, sqlite3, plotly, scrapy, request, nltk, sklearn, os, time, docx y pptx.</p>
+
 <br>
 <h2>Información extra</h2>
 <ul>
@@ -174,7 +175,7 @@
 	<div class="nota">
 	Tambien como proyecto personal fue la realizacion de este portafolio, se recibio ayuda para la realizacion de las cajas que contine los proyectos, de ahí en fuera el desarrollo de este mismo se hizo desde cero.
 	<br>
-    Nota: la información presentada en los proyectos relizados, es ligeramente diferente al verdadero proyecto realizado, por fines de confidencialidad a la institución que se realizo el proyecto
+    Nota: la información presentada en los proyectos relizados, es ligeramente diferente al verdadero proyecto, por fines de confidencialidad a la institución que se realizo el proyecto
     </div>
 
 	<div class="informacion" id="informacion_buscador" style="display:none;">
@@ -182,28 +183,28 @@
 	          	<div class="contenedor">
 	          		<p2>Objetivos:</p2><p>Realizar un buscador de noticias especializado en un tipo especifico de contenido</p>
 	          		<p2>Metodología:</p2>
-	          		<p>Para la realizacion de este proyecto separo en 3 modulos principales, uno que fue la busqueda de la información, el segundo optimización en la busqueda y el tercero la presentacion del contenido</p>
+	          		<p>Para realizar este proyecto se separo en 3 modulos principales, uno encargado a la busqueda de la información, el segundo optimización en la busqueda y el tercero la presentacion del contenido</p>
 	          		<br>
 	          		<p> • PRIMER MODULO</p>
-	          		<p> Se realizo con python con el uso de las librerias: pandas, sqlite3, scrapy, request, nltk, sklearn, os, time; el desarrollo consistio en realizar 2 tipos de busqueda, uno con busqueda RSS de una lista de paginas (RSS es una estructura que recopilar información en algunos sitios web)  y el segundo extraer información de las noticias de google con una busqueda de palabras clave.</p>
+	          		<p> Se ocupó python con el uso de las librerias: pandas, sqlite3, scrapy, request, nltk, sklearn, os, time; el desarrollo consistio en realizar 2 tipos de busqueda, uno con busqueda RSS de una lista de paginas (RSS es una estructura que recopilar información en algunos sitios web)  y el segundo extraer información de las noticias de google con una busqueda de palabras clave.</p>
 
-	          		<p>Obtenida la información se procedia a limpiar y guardarla a una base de datos, con la información obtenida se asignó una calificación por palabras o grupos de palabras de interés </p>
+	          		<p>Ya con la información, se limpió y guardó en una base de datos, además se le asignó una calificación por palabras y por grupos de palabras de interés </p>
 	          		<br>
 	          		<p> • SEGUNDO MODULO</p>
-	          		<p>Una vez guardada la información en la base de datos se prosiguio a hacer una limpieza manual para determinar que noticias eran las que nos interesaban marcandolas con un 1 y cuales la que no marcandolas con un 0, esto para poder hacer un analisis mas profundo.</p>
+	          		<p>Con la información guardada, se prosiguió de una limpieza manual, para determinar que noticias eran las que nos interesaban, marcandolas con un 1 y cuales la que no, marcandolas con un 0, esto para poder hacer un análisis mas profundo.</p>
 
-	          		<p>Para la optimización se realizo una prueba diagnostica, con el fin de determinar la eficiencia de la busqueda de las noticias y tambien para determinar las modificaciones de como calificar el contenido, ademas de buscar la calificación optima de nuestras noticias donde se optienen el menor numero de falsos negativos y falsos positivos (Entiendase como falso positivo las noticias marcadas como 1 por debajo de una calificacion de corte y como falso negativo las noticias marcadas con 0 que su calificacion este por arriba de la calificacion de corte)</p>
+	          		<p>Para la optimización se realizó una prueba diagnostica, con el fin de determinar la eficiencia de la busqueda de las noticias y tambien para determinar las modificaciones de como calificar el contenido, ademas de buscar la calificación optima de nuestras noticias, donde se optienen el menor numero de falsos negativos y falsos positivos (Entiendase como falso positivo las noticias marcadas como 1 por debajo de una calificacion de corte y como falso negativo las noticias marcadas con 0 que su calificacion este por arriba de la calificacion de corte)</p>
 
-	          		<p>Con los resultados optenidos se puntuaba diferente las noticias, para la cual se implementaron metodos con python para recalcular las calificaciones y guardarlas en la base de datos.</p>
+	          		<p>Con los resultados optenidos se puntuaba diferente las noticias, para la cual se implementaron metodos con python para recalcular las calificaciones y actualizarlas en la base de datos.</p>
 
 	          		<br>
 	          		<p> • TERCER MODULO</p>
 
-	          		<p>Para presentar la información se ocupo python,HTML,css y JavaScript, por parte de python se uso la paquetería flask y sqlite3 para levantar el servicio y hacer las consultas de las noticias, por el lado de la visualizacion de ocupo HTML con jinja </p>
+	          		<p>Presentación de la información, se ocupó python con el uso las paqueterías flask y sqlite3 para levantar el servicio y hacer las consultas de las noticias, por el lado de la visualizacion de ocupo HTML,CSS y JavaScript con jinja </p>
 	          		
 	          		
 	          		<p2>Resultados:</p2>
-	          		<p>Dentro del analisis estadisto hecho, se llego a un area bajo la curva ROC de 0.85 lo cual es vastante bueno, ademas de que la información que se muestra se hace en la calificacion de corte optima  </p>
+	          		<p>Dentro del análisis estadísto hecho, se llego a un area bajo la curva ROC de 0.85 lo cual es bastante bueno, además de que la información que se muestra se hace en la calificación de corte óptima  </p>
 	          		<p>A continuación se muestran las imagenes de los resultados, para ver la imagen completa dar click sobre ella.</p>	
 	          		
 	          		<div class="grid2">
@@ -273,9 +274,9 @@
 	          		<br>
 	          		<p2>Metodología:</p2>
 	          		<br>
-	          		<p>Se ocupo python, HTML, css, bootrap y javascrip para crear este proyecto, principalmente la utilizacion de los paquetes de flask, DB, pandas, os y jinja</p>
+	          		<p>Se ocupó python, HTML, css, bootrap y javascrip para crear este proyecto, principalmente la utilizacion de los paquetes de flask, DB, pandas, os y jinja</p>
 	          		<p>El flujo de desarrollo fue tener primero las consultas a realizar a nuestro servidor (una base de datos local de la institucion) posteriormente se desarrollo la interfaz grafica en HTML, para saber a que elementos se tenian que referenciar en flask</p>
-	          		<p>Una vez hechas las conexiones adecuadas se prosiguio a incorporar dentro del programa de python, la limpieza de los datos obtenidos y poner en el formato deseado para, que este al final guardase una carpeta con los archivos generados en formato csv y excel, en la carpeteta de descargas del equipo.</p>
+	          		<p>Una vez hechas las conexiones adecuadas se prosiguio a incorporar dentro del programa de python, la limpieza de los datos obtenidos y ponerlos en un formato específico, para finalizar guardó  todos los archivos generados en una carpeta dentro de la carpeta de descargas del equipo.</p>
 	          		<br>
 	          		<p2>Resultados:</p2>
 	          		<br>
@@ -300,8 +301,8 @@
 	          		<p>Se presentan 3 reportes en los que se automatizo el proceso</p>
 	          		<br>
 	          		<p> • PRIMER REPORTE</p>
-	          		<p>Este reporte se desarrollo en python con el paquete docx, se tenia un archivo excel que es generado por otro programa, del cual se tenia la infomacion necesaria para colocar en el documento</p>
-	          		<p>Practicamente el proyecto consistio en pasar esa información a un reporte con un formato especifico en un archivo word, lo tardado o laborioso fue dar el formato de la salida</p>
+	          		<p>Este reporte se desarrollo en python con el paquete docx, se tiene un archivo excel que es generado por otro programa, del cual se contiene la infomacion necesaria para colocar en el documento</p>
+	          		<p>El proyecto consistio en pasar esa información a un reporte con un formato especifico en un archivo word, lo tardado o laborioso fue dar el formato de la salida</p>
 
 	          		<br>
 	          		<p> • SEGUNDO REPORTE</p>
@@ -309,8 +310,8 @@
 
 	          		<br>
 	          		<p> • TERCER REPORTE</p>
-	          		<p>Este reporte se desarrollo en excel con macros (VBA) y  python (antes de que se implementara python en excel de forma nativa), la macro realiza peticiones al servidor de la base de datos local y despues agrega la información en el reporte, habian campos en el reporte que requerian hacer un calculo especifico, por lo cual se hacia una conexion a python para que hiciera los calculos, se ocupo python pues los calculos se hacian sobre una base con un gran volumen de datos, la cual no podia procesar facilmente excel o que eran demasiado tardados en excel</p>
-	          		<p>Para hacer las consultas se creo un pequeño formulario el cual se ingresa el año del que se quiere hacer el reporte y la base que se ocupara </p>
+	          		<p>Este reporte se desarrollo en excel con macros (VBA) y  python (antes de que se implementara python en excel de forma nativa), la macro realiza peticiones al servidor de la base de datos local y despues agrega la información en el reporte, hay campos en el reporte que requieren hacer un calculo especifico y se tiene una base con un gran volumen de datos, la cual no puede procesar facilmente excel,  por ello se hace una conexion a python para ejecutar los calculos necesarios y agilizar el proceso.</p>
+	          		<p>Se creo un pequeño formulario en VBA, para facilitar la interacción con el usuario. En el formulario se selecciona de una lista el año del que se quiere hacer el reporte y la base que se ocupara.</p>
 
 	          		<p2>Resultados:</p2>
 	          		<p>El primer reporte nos presento una ventaja de ahorro de hasta 2 hrs por reporte</p>
@@ -367,7 +368,7 @@
 			<br>
 		<div class="servicio1 degradado2">
 			<h2>En la Facultad de Ingeniería (FI) de la UNAM (Marzo-Agosto 2017 y Marzo-Agosto 2018)</h2>
-			Para la obtención de mi estudio técnico especializado realice un servicio social en la FI.
+			Para la obtención de mi estudio técnico especializado realicé un servicio social en la FI.
 			<br>
 			<br>
 			Algunas de las actividades realizadas fueron:
@@ -380,20 +381,19 @@
 			<br>
 			•	Clonado de discos duros.
 			<br>
-			•	Realizar un análisis, diseño y modelado de una base de datos con incorporación a una página web, haciendo uso de java script, y PHP, para ordenar el inventario del equipo de cómputo.
-
+			•	Realizar un análisis, diseño y modelado de una base de datos con incorporación a una página web, con uso de HMTL,CSS,java script y PHP.con el fin de ordenar el inventario del equipo de cómputo.
 		</div>
 		<br>
 		<div class="servicio2 degradado3">
 			<h2>En la Comisión Nacional de Seguros y Fianzas (Abril- Octubre 2023)</h2>
-			En el servicio social para la licenciatura, lo realice en la CNSF.
+			En el servicio social para la licenciatura, lo realicé en la CNSF.
 			<br>
 			<br>
-			Dentro de las actividades que realice se encuentra el buscador de noticias, el formulario de consultas y la utomatización de reportes, los cuales se encuentran un poco mas especificos en la seccipon de proyectos (hay que dar click sobre la imagen para desplegar los objetivos y la metodología empleada)
+			Dentro de las actividades que realicé se encuentra el buscador de noticias, el formulario de consultas y la utomatización de reportes, los cuales se encuentran un poco mas especificos en la seccipon de proyectos (hay que dar click sobre la imagen para desplegar los objetivos y la metodología empleada)
 			<br>
 			<br>
 			
-			Pero en resumen realice las siguientes actividades:
+			Pero en resumen realicé las siguientes actividades:
 			<br>
 			•	Automatizar procesos con Python con la finalidad de mejorar el rendimiento y la estructura del proceso.
 			<br>
@@ -401,19 +401,19 @@
 			<br>
 			•   Ajuste de modelos.
 			<br>
-			•   Análisis estadístico
+			•   Análisis estadístico.
 			<br>
-			•   Creación de un modelo de machine learning sobre textos
+			•   Creación de un modelo de machine learning sobre textos.
 			<br>
 			•	Desarrollo de un programa Python para mostrar noticias de interés referentes al sector asegurador.
 			<br>
-			•	Desarrollo de un programa Python para crear documentos Word de forma automática.
+			•	Desarrollo de un programa Python para crear documentos Word,con los formamatos de Requerimiento y Emplazamiento de la CNSF.
 			<br>
 			•	Desarrollo de un programa Python para crear presentaciones en PowerPoint de forma automática.
 			<br>
 			•	Participar en realizar trabajos enfocados en estadística, para la toma de decisiones en el sector.
 			<br>
-			•	Realizar una página local en HTML la cual hace consultas SQL a la base de la CNSF y genera archivos específicos.
+			•   Crear un programa que realiza la extracción de los datos que presenta el Sistema de información oportuna de la CNSF
 		</div>
 	
 	</div>
