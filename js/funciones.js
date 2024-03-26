@@ -59,18 +59,21 @@
 		document.getElementById('informacion_buscador').style.display = 'block';
 		document.getElementById('Formulario_consultas').style.display = 'none';
 		document.getElementById('Automatizacion_reportes').style.display = 'none';
+		document.getElementById('informacion_buscador').scrollIntoView();
 	}
 
 	function muestra_formulario_consultas(){
 		document.getElementById('informacion_buscador').style.display = 'none';
 		document.getElementById('Formulario_consultas').style.display = 'block';
 		document.getElementById('Automatizacion_reportes').style.display = 'none';
+		document.getElementById('Formulario_consultas').scrollIntoView();
 	}
 
 	function muestra_automatizador(){
 		document.getElementById('informacion_buscador').style.display = 'none';
 		document.getElementById('Formulario_consultas').style.display = 'none';
 		document.getElementById('Automatizacion_reportes').style.display = 'block';
+		document.getElementById('Automatizacion_reportes').scrollIntoView();
 	}
 
 	function bloquea_proyectos(){
