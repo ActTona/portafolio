@@ -1,3 +1,34 @@
+
+	const distancia = $('#Barra_contenido').offset().top;
+	
+
+	function cambiar_tema(){
+		var nombre = window.document.URL;
+		nombre=subcadena(nombre,"/");
+		extra=nombre.lastIndexOf("?");
+		console.log(extra);
+		if(extra!=-1){
+			nombre=nombre.substring(1,extra);
+		}else{
+			nombre=nombre.substring(1);
+		}
+		console.log(nombre)
+		var posicionBoton = $('#modo').offset().top;
+		if(nombre=="modo_oscuro.html"){
+			location.href ='index.html?locacion='+posicionBoton;
+		}
+		else{
+			location.href ='modo_oscuro.html?locacion='+posicionBoton;
+		}
+
+		
+
+	}
+
+	function subcadena(cadena,caracter){
+			return cadena.substring(cadena.lastIndexOf(caracter));
+	}
+
 	function sobremi(){
 		if (document.getElementById('informacion_sobre_mi').classList.length==3){
 		desbloquea_informacion();
@@ -7,6 +38,8 @@
 		document.getElementById('Sobremi').style.display = 'block';
 		document.getElementById('Proyectos').style.display = 'none';
 		document.getElementById('Servicio').style.display = 'none';
+		
+		window.scroll(0, distancia);
 		}
 
 		document.getElementById('informacion_sobre_mi').classList.toggle("open");
@@ -22,6 +55,7 @@
 		document.getElementById('Sobremi').style.display = 'none';
 		document.getElementById('Proyectos').style.display = 'block';
 		document.getElementById('Servicio').style.display = 'none';
+		window.scroll(0, distancia);
 		}	
 
 		document.getElementById('informacion_sobre_mi').classList.remove("open");
@@ -37,6 +71,7 @@
 		document.getElementById('Proyectos').style.display = 'none';
 		document.getElementById('Servicio').style.display = 'block';
 		document.getElementById('Sobremi').style.display = 'none';
+		window.scroll(0, distancia);
 		}
 		
 		document.getElementById('informacion_sobre_mi').classList.remove("open");
@@ -45,8 +80,9 @@
 		
 	}
 	function contacto(){
-		 const posicionY = document.getElementById("Contacto").getBoundingClientRect().top;
-  			window.scroll(0, posicionY);
+		 const posicionY = document.getElementById("Contacto").getBoundingClientRect().y;
+		 const distancia = $('#Contacto').offset().top;
+  			window.scroll(0, distancia);
 	}
 
 	function desbloquea_informacion(){
